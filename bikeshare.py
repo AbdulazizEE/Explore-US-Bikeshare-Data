@@ -162,7 +162,7 @@ def user_stats(df,city):
 
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*40)
-
+	"""coz washington data is missing"""
     else :
         print("user data were not found")
         
@@ -179,6 +179,7 @@ def display_raw_data(df):
             print(df[i: i + 5]) # TO DO: appropriately subset/slice your dataframe to display next five rows
             raw = input("would you like to display the next 5 row . Please enter only 'yes' or 'no'") # TO DO: convert the user input to lower case using lower() function
             i += 5
+	"""raw data check option"""
         else:
             raw = input("\nYour input is invalid. Please enter only 'yes' or 'no'\n").lower()
 
